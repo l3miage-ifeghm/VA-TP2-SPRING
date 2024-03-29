@@ -12,3 +12,5 @@ spring:
   jpa:
     hibernate:
       ddl-auto: create-drop
+      # Permet de voir le sql dans les logs du serveur
+    show-sql: true
