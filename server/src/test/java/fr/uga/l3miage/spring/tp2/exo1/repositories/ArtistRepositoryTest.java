@@ -22,14 +22,26 @@ public class ArtistRepositoryTest {
     @Test
     void testRequestFindAllByGenre(){
         //given
-        ArtistEntity artistEntity1 = ArtistEntity.builder().name("Manal")
-                .biography("Née le 27 Octobre 2004").genreMusical(VARIETY).build();
+        ArtistEntity artistEntity1 = ArtistEntity
+                .builder()
+                .name("Manal")
+                .biography("Née le 27 Octobre 2004")
+                .genreMusical(VARIETY)
+                .build();
 
-        ArtistEntity artistEntity2 = ArtistEntity.builder().name("Ahmed")
-                .biography("Née le 12 décembre 2002, a gagné 2 oscars").genreMusical(CLASSIC).build();
+        ArtistEntity artistEntity2 = ArtistEntity
+                .builder()
+                .name("Ahmed")
+                .biography("Née le 12 décembre 2002, a gagné 2 oscars")
+                .genreMusical(CLASSIC)
+                .build();
 
-        ArtistEntity artistEntity3 = ArtistEntity.builder().name("Ayman")
-                .biography("Née le 10 décembre 2003, a gagné 2 oscars").genreMusical(VARIETY).build();
+        ArtistEntity artistEntity3 = ArtistEntity
+                .builder()
+                .name("Ayman")
+                .biography("Née le 10 décembre 2003, a gagné 2 oscars")
+                .genreMusical(VARIETY)
+                .build();
 
         artistRepository.save(artistEntity1);
         artistRepository.save(artistEntity2);
